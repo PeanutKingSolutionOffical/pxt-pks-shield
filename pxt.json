@@ -2,6 +2,7 @@
     "name": "pks-shield",
     "version": "0.0.0",
     "description": "",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
         "radio": "*",
@@ -19,6 +20,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj",
-    "license": "MIT"
+    "preferredEditor": "blocksprj"
 }
