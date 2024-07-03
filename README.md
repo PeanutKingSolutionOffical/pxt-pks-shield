@@ -11,7 +11,7 @@ https://www.peanutkingstore.com/product/peanut-king-micro-bit-robot-shield-v1-2
 * [License](#license)
 
 ## URL
-project URL:  ``````
+project URL:  ```https://github.com/PeanutKingSolutionOffical/pxt-pks-shield```
 
 ## Summary
 The Micro:bit motor drive expansion board not only enhances motor drive capabilities but also incorporates four motor driven, 2 road, on the basis of stepper motor driver, 
@@ -23,28 +23,27 @@ It's known for its wide voltage compatibility, numerous ports, compact size, and
 
 ## Blocks
 ### 1. Robot
-![image](image/.png)
+![image](images/robot.png)
 
 ### 2. Compass
-![image](image/.png)
+![image](images/compass.png)
 
 ## Code Example
 Get readings from compound eye
 ```JavaScript
 basic.forever(function () {
-
+    serial.writeNumber(pksdriver.compoundEyeRead(pksdriver.compoundEyeData.max_eye))
+    serial.writeNumber(pksdriver.compoundEyeRead(pksdriver.compoundEyeData.max_eye_value))
+    basic.pause(1000)
 })
-
-
 ```
 
 Get readings from compass
 ```JavaScript
 basic.forever(function () {
-
+    serial.writeNumber(pksdriver.compass_get_yaw())
+    basic.pause(1000)
 })
-
-
 ```
 
 
@@ -57,5 +56,5 @@ MIT
 * for PXT/microbit
 (The metadata above is needed for package search.)
 ```package
-gamePad=github:
+gamePad=github:PeanutKingSolutionOffical/pxt-pks-shield
 ```
