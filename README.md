@@ -46,6 +46,8 @@ basic.forever(function () {
 })
 ```
 
+## More resources
+```https://home.peanutkingeducation.com/```
 
 ## License
 
