@@ -30,6 +30,7 @@ It's known for its wide voltage compatibility, numerous ports, compact size, and
 
 ## Code Example
 Get readings from compound eye
+![image](images/component%20compound%20eye.png)
 ```JavaScript
 basic.forever(function () {
     serial.writeNumber(pksdriver.compoundEyeRead(pksdriver.compoundEyeData.max_eye))
@@ -39,6 +40,7 @@ basic.forever(function () {
 ```
 
 Get readings from compass
+![image](images/component%20compass.png)
 ```JavaScript
 basic.forever(function () {
     serial.writeNumber(pksdriver.compass_get_yaw())
